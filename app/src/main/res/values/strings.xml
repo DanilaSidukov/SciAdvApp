@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SciAdvApp</string>
+    <string name="sci_adv_title">SCIENCE ADVENTURE SERIES</string>
+
+    <string name="chaos_head">chaos_head</string>
+    <string name="steins_gate">steins_gate</string>
+    <string name="chaos_child">chaos_child</string>
+    <string name="occultic_nine">occultic_nine</string>
+    <string name="robotics_notes">robotics_notes</string>
+    <string name="anonymous_code">anonymous_code</string>
+</resources>
