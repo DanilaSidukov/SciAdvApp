@@ -10,7 +10,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.diphrogram.sciadvapp.data.ENTRY_KEY
 import com.diphrogram.sciadvapp.theme.SciAdvTheme
-import com.diphrogram.sciadvapp.ui.screens.entity.EntityScreen
+import com.diphrogram.sciadvapp.ui.screens.entry.EntryScreen
 import com.diphrogram.sciadvapp.ui.screens.main.EntriesScreen
 import com.diphrogram.sciadvapp.utility.Screen
 
@@ -36,8 +36,11 @@ fun NavigationGraph(
             EntriesScreen(navHostController = navHostController)
         }
         composable(Screen.Entry.route) {
-            EntityScreen(
-                entityName = navHostController.previousBackStackEntry!!.savedStateHandle.get<String>(ENTRY_KEY)!!
+            EntryScreen(
+                navController = navHostController,
+                entryName = navHostController.previousBackStackEntry!!.savedStateHandle.get<String>(ENTRY_KEY)!!,
+                 entryCoverColor = "#7C7C7E",
+                topBarColor = "#7C7C7E"
             )
         }
     }

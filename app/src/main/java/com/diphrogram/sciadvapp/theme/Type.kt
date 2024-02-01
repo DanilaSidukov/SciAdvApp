@@ -1,6 +1,8 @@
 package com.diphrogram.sciadvapp.theme
 
 import androidx.compose.material3.Typography
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -29,6 +31,25 @@ internal fun LeagueGothicFamilyStyle(weight: FontWeight, size: TextUnit = 16.sp)
         fontFamily = LeagueGothicFamily,
         fontWeight = weight,
         fontSize = size
+    )
+
+internal fun TuersCardboardStyle(weight: FontWeight, size: TextUnit = 16.sp) =
+    TextStyle(
+        fontFamily = TuersCardboard,
+        fontWeight = weight,
+        fontSize = size
+    )
+
+internal fun ChaosHeadNoAHEntryStyle(weight: FontWeight, size: TextUnit = 16.sp) =
+    TextStyle(
+        fontFamily = TuersCardboard,
+        fontWeight = weight,
+        fontSize = size,
+        drawStyle = Stroke(
+            miter = 0f,
+            width = 5f,
+            join = StrokeJoin.Round,
+        )
     )
 
 data class SciAdvTypography(

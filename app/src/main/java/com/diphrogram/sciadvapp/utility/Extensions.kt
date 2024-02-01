@@ -1,6 +1,7 @@
 package com.diphrogram.sciadvapp.utility
 
 import android.content.Context
+import androidx.compose.ui.graphics.Color
 import com.diphrogram.sciadvapp.R
 import com.diphrogram.sciadvapp.data.EntitiesName
 
@@ -13,4 +14,8 @@ fun EntitiesName.asString(context: Context): String {
         EntitiesName.ROBOTICS_NOTES -> context.getString(R.string.robotics_notes)
         EntitiesName.ANONYMOUS_CODE -> context.getString(R.string.anonymous_code)
     }
+}
+
+fun String.getColor(): Color {
+    return Color(android.graphics.Color.parseColor(this))
 }

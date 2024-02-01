@@ -111,7 +111,7 @@ fun EntriesList(
     entityList: List<Pair<Int, EntitiesName>>
 ) {
     CompositionLocalProvider(
-        LocalOverscrollConfiguration.provides(null)
+        LocalOverscrollConfiguration provides null
     ) {
         LazyVerticalGrid(
             columns = GridCells.Fixed(2),
